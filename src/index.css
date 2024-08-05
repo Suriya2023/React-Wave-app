@@ -1,13 +1,132 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.mb-lg-0{
+    margin:0 auto;
+}
+.header-1{
+    background:#e1ebfa;
+    color: black;
+    width:100%;
+    
+}
+.img-header{
+    width:100%;
+    border-radius:61% 39% 39% 61% / 66% 52% 48% 34% ;
+}
+.font-w{
+width:50%;
+}
+.fw-normal{
+    font-family: "Playwrite BE VLG", cursive;
+    color:#A30000;
+    font-size: larger;
+    background:linear-gradient(120deg,#fff3cd, #fff3cd);
+    background-size: 100% 20%;
+    background-position: 0% 80%;
+    background-repeat: no-repeat;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.text-f{
+    border-bottom: linear-gradient(120deg,#e4a0a1,#e4a0a1);
 }
+
+.fw-bolder {
+    font-weight: bolder !important;
+    width: 96%;
+    font-size: 35rem;
+    margin-left: 2rem;
+}
+.section2{
+    background-image: url(https://bootstrapbrain.com/demo/templates/wave/wave-lite/assets/img/cta/cta-img-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.span2{
+    background: linear-gradient(120deg, #e4a0a1, #e4a0a1);
+    background-position: 0 80%;
+    background-size: 100% 20%;
+    background-repeat: no-repeat;
+}
+.div-text{
+    position: absolute;
+    margin-top: -32rem ;
+    margin-left: 10% !important;
+}
+.curs{
+    font-weight: 700;
+}
+.image{
+    margin-top: 1rem;
+}
+
+.fw-normal{
+    /* background-color: #e4a0a1; */
+}
+
+#flexarrow{
+    display:inline-block;
+}
+
+@media (max-width:991px){
+    .startplus{
+        text-align: center;
+        margin: 0 auto;
+    }
+    figure img{
+        margin: 0 auto;
+    }
+    #flex{
+        flex-direction:column;
+    }
+}
+@media (min-width:320px){
+    .div-text{
+        position: absolute;
+        margin-top: -32rem ;
+        margin-left: 1% !important;
+    }
+    .fw-bolder{
+        margin-left: 0rem;
+        font-size: 40px;
+    }
+}
+
+#navbar{
+    width: 100%;
+    /* height: 2vmin; */
+    background: #e1ebfa;
+}
+#navbarr{
+    width: 100%;
+    /* height: 2vmin; */
+    background: #e1ebfa;
+}
+
+/* .imgthisdie{
+    position:absolute;
+} */ 
+ .div-img{
+    transform: scale(1.5);
+    transition: all 1.5s;
+ }
+  .div-main:hover .div-img{
+    transform: scale(1);
+  }
+  .div-sub{
+    color: white;
+    opacity: 0;
+    transition: all 1.5;
+  }
+  .div-main:hover .div-sub{
+    opacity: 1;
+    background-color: rgba(0, 0,0, 0.448);
+  }
+
+
